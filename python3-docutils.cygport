@@ -1,7 +1,7 @@
 inherit python3-distutils
 
 NAME="python3-docutils"
-VERSION=0.10
+VERSION=0.12
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K reStructuredText processing module"
@@ -11,6 +11,8 @@ LaTeX. It includes reStructuredText, the easy to read, easy to use,
 what-you-see-is-what-you-get plaintext markup language."
 HOMEPAGE="http://docutils.sourceforge.net/"
 SRC_URI="mirror://sourceforge/docutils/${P#python3-}.tar.gz"
+
+ARCH=noarch
 
 python3_docutils_CONTENTS=${PYTHON3_SITELIB#/}" usr/share/"
 PKG_IGNORE="usr/bin/"
